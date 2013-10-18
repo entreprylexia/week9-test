@@ -58,9 +58,11 @@ describe 'the Friday test :)' do
   specify 'get_first_half_of_string' do
     a = get_first_half_of_string 'banana'
     b = get_first_half_of_string 'apple'
+    c = get_first_half_of_string 'antidisestablishmentarianism'
 
     expect(a).to eq 'ban'
     expect(b).to eq 'app'
+    expect(c).to eq 'antidisestabli'
   end
 
   specify 'make_numbers_negative' do
